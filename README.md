@@ -24,7 +24,7 @@ This data analysis project aims to provide insights on the Bike Shop performance
 
 - Data loading and inspection
 - Data Cleaning and Formatting
-- Data preparation and manipulation for desired result set
+- Data preparation and manipulation/analysis for desired result set
 - Exporting Data to PowerBI
 - Creating measures in PowerBI
 - Creating Report in PowerBI
@@ -35,7 +35,7 @@ This data analysis project aims to provide insights on the Bike Shop performance
 
 - Interactive report created displaying key metrics requested which can be sliced.
 - Recommendation on pricing strategy for following year
-- Copy of written SQL code
+- Copy of written SQL code for data analysis
 
 
   
