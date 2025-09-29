@@ -31,7 +31,7 @@ This data analysis project aims to provide insights on the Bike Shop performance
 
 
 
-  ### Output
+  ### Outputs
 
 - Interactive report created displaying key metrics requested which can be sliced.
 - Recommendation on pricing strategy for following year
