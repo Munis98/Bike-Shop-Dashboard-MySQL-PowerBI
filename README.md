@@ -35,6 +35,7 @@ This data analysis project aims to provide insights on the Bike Shop performance
 
 - Interactive report created displaying key metrics requested which can be sliced.
 - Recommendation on pricing strategy for following year
+- Copy of written SQL code
 
 
   
