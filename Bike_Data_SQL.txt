@@ -1,0 +1,58 @@
+SELECT * FROM bike_share_yr_0;
+
+SELECT * FROM bike_share_yr_1;
+
+SELECT str_to_date(dteday,'%d/%m/%Y')
+FROM bike_share_yr_0;
+
+SET SQL_SAFE_UPDATES=0;
+
+-- Updating String to date for 2021 Table.
+-- Changing data type to Date.
+
+UPDATE bike_share_yr_0
+SET dteday = str_to_date(dteday,'%d/%m/%Y');
+
+ALTER TABLE bike_share_yr_0
+MODIFY dteday DATE; 
+
+-- Updating String to date for 2022 Table.
+-- Changing data type to Date.
+
+UPDATE bike_share_yr_1
+SET dteday = str_to_date(dteday,'%d/%m/%Y');
+
+ALTER TABLE bike_share_yr_1
+MODIFY dteday DATE; 
+
+-- Joining Bike share tables on top of one another as one table has data from 2021 and the other has data from 2022
+-- Left Joining with Cost table to get Price and COGS all in one Table
+-- Perfomring Calculations to work out Revenue and Profit using the Riders, Price and COGS data
+-- Calculating Year with Case statement when yr = 0 then 2021 and yr=1 then 2022
+-- Exporting data to Power BI to visualise and answer key business questions
+-- Using Power BI to make Measures using the Data
+
+WITH CTE AS (
+SELECT * FROM bike_share_yr_0
+UNION ALL
+SELECT * FROM bike_share_yr_1)
+
+SELECT 
+dteday,
+season,
+C.yr,
+CASE
+WHEN c.yr = 0 THEN 2021
+ELSE 2022
+END AS Year,
+weekday,
+hr,
+rider_type,
+riders,
+price,
+COGS,
+riders*price AS Revenue,
+riders*price- COGS*riders AS Profit
+FROM CTE C
+LEFT JOIN Cost_table CT
+ON C.yr = CT.yr;
