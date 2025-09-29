@@ -37,5 +37,25 @@ This data analysis project aims to provide insights on the Bike Shop performance
 - Recommendation on pricing strategy for following year
 - Copy of written SQL code for data analysis
 
+  ### Request
 
-  
+We need your expertise to develop a dashboard for our Bike Shop that displays out key metrics for informed decision making. 
+
+Key Requirements 
+
+- Hourly Revenue Analysis 
+
+- Profit and Revenue Trends 
+
+- Seasonal Revenue 
+
+- Rider Demographics 
+
+Please use suitable colors and make it easy navigate. 
+
+Please also provide recommendations on raising prices Next Year. 
+
+### Summary of Recommendation
+
+Conservative Increase: Considering the substantial increase last year, a more conservative increase might be prudent to avoid hitting a price ceiling where demand starts to decrease. An increase of 10%-15% might be useful to test the markets response without risking loss of customers. 
+
